@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "81:3000"
+    volumes:
+     - .:/app
+    command: nodemon -L index.js
