@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-     - "81:3000"
+     - "80:1337"
     volumes:
      - .:/app
-    command: nodemon -L index.js
+    command: sails lift
